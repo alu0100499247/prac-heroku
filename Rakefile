@@ -2,7 +2,7 @@ require 'rake'
 
 desc "Ejecutar la práctica"
 task :default do
-	sh "ruby ppt.rb"
+	sh "ruby lib/ppt.rb"
 end
 
 desc "Ejecutar la práctica eligiendo piedra"
