@@ -35,7 +35,7 @@ Ejecución
 
 Podemos ejecutar la práctica de las siguientes formas:
 
-* Como en el directorio hemos específicado un Rakefile, podemos introducir en la consola el siguiente comando: `rake`. Luego con un navegador iremos a la página `localhost:9292` para visualizar el resultado.
+* Como en el directorio hemos específicado un Rakefile, podemos introducir en la consola el siguiente comando: `rake`. Luego con un navegador iremos a la página `localhost:8080` para visualizar el resultado.
 
 
 #####Asignatura: Sistemas y Tecnologías Web.
