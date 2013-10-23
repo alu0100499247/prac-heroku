@@ -1,0 +1,61 @@
+require "test/unit"
+require "rack/test"
+require './lib/ppt'
+
+class PPTTest < Test::Unit::TestCase
+
+	include Rack::Test::Methods
+
+	def app
+		Rack::Session::Cookie.new(PiedraPapelTijeras::App.new,
+									:secret => 'cristhian')
+	end
+
+	#def setup
+	#	computer_throw = 'piedra'
+	#end
+
+	def test_inicial
+		get "/"
+		assert last_response.body.include?("Elige una de las siguientes opciones:")
+	end
+
+	def test_titulo
+		get "/"
+		assert_match "<title>PPT</title>", last_response.body
+	end
+
+	def pc
+		computer_throw = 'piedra'
+	end
+
+	def test_tie
+		get "/?choice=piedra"
+		assert last_response.body.include?("Has empatado! Elige de nuevo ;)")
+	end
+
+	def test_game
+		get "/?choice=piedra"
+		assert last_response.body.include?("Jugadas") 
+	end
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
