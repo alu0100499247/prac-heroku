@@ -10,6 +10,11 @@ task :test do
 	sh "ruby -Ilib -Itest test/tc_ppt.rb"
 end
 
+desc "Ejecutar test usando TDD"
+task :spec do
+	sh "rspec spec/ppt_spec.rb"
+end
+
 desc "Ejecutar la práctica eligiendo piedra"
 task :piedra do
 	sh %q{curl -v 'http://localhost:8080/?choice=piedra'}
