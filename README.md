@@ -17,6 +17,7 @@ El contenido del fichero que se presenta es el siguiente:
 * Gemfile.lock
 * README
 * Rakefile
+* config.ru
 * public
 	* css
 	* img
@@ -25,9 +26,11 @@ El contenido del fichero que se presenta es el siguiente:
 	* ppt.rb
 * views
 	* index.haml
+* test
+	* tc_ppt.rb
 * spec
 	* ppt_spec.rb
-	* test_ppt.rb
+
 
 
 Ejecución	
@@ -36,6 +39,10 @@ Ejecución
 Podemos ejecutar la práctica de las siguientes formas:
 
 * Como en el directorio hemos específicado un Rakefile, podemos introducir en la consola el siguiente comando: `rake`. Luego con un navegador iremos a la página `localhost:8080` para visualizar el resultado.
+
+* Si queremos ejecutar los test unitarios debemos introducir la orden: `rake test`
+
+* Si queremos ejecutar los test con RSpec debemos introducir el comando: `rake spec`
 
 
 #####Asignatura: Sistemas y Tecnologías Web.

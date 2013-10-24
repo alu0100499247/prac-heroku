@@ -2,7 +2,7 @@ require 'rake'
 
 desc "Ejecutar la práctica"
 task :default do
-	sh "ruby lib/ppt.rb"
+	sh "rackup"
 end
 
 desc "Ejecutar test unitarios"
