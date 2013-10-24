@@ -53,6 +53,14 @@ module PiedraPapelTijeras
 			@session['lost'] = value
 		end
 
+		#def pc
+		#	computer_throw
+		#end
+
+		#def pc=(value)
+		#	computer_throw = value
+		#end
+
 		def call(env)
 			set_env(env)
 			req = Rack::Request.new(env)
@@ -95,9 +103,9 @@ module PiedraPapelTijeras
 				:tie => self.tie,
 				:lost => self.lost) 
 			res.finish
-		end
-	end
-end
+		end	# Call		
+	end	# Class
+end	# Module
 
 if $0 == __FILE__
 	require 'rack'
