@@ -11,10 +11,6 @@ class PPTTest < Test::Unit::TestCase
 									:secret => 'cristhian')
 	end
 
-	#def setup
-	#	computer_throw = 'piedra'
-	#end
-
 	def test_inicial
 		get "/"
 		assert last_response.body.include?("Elige una de las siguientes opciones:")
@@ -23,10 +19,6 @@ class PPTTest < Test::Unit::TestCase
 	def test_titulo
 		get "/"
 		assert_match "<title>PPT</title>", last_response.body
-	end
-
-	def pc
-		computer_throw = 'piedra'
 	end
 
 	def test_tie
@@ -40,8 +32,6 @@ class PPTTest < Test::Unit::TestCase
 	end
 
 end
-
-
 
 
 
