@@ -1,13 +1,11 @@
 source 'https://rubygems.org'
 
-group :production do
-	gem 'haml'
-	gem 'rack'
-	gem 'thin'
-	gem 'rake'
-end
+gem 'haml'
+gem 'rack'
+gem 'thin'
+gem 'rake'
 
-group :test do
+group :test, :development do
 	gem "rack-test"
 	gem "rspec"
 end
