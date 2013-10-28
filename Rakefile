@@ -2,7 +2,7 @@ require 'rake'
 
 desc "Ejecutar la práctica"
 task :default do
-	sh "bundle exec rackup"
+	sh "rackup"
 end
 
 desc "Ejecutar test unitarios"
