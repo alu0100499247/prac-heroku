@@ -11,7 +11,7 @@ Objetivo
 
 En ésta práctica realizaremos el despliegue en Heroku de nuestro proyecto Piedra-Papel-Tijeras. Para ello primero debemos crearnos una cuenta en Heroku y descargarnos el Heroku Toolbelt.
 
-Debemos disponer de un Gemfile y de un Rakefile; luego podremos introducir en consola las ordenes `heroku create` y `git push heroku master`.
+Debemos disponer de un Gemfile y de un Rakefile; luego podremos introducir en consola las ordenes `heroku create` y `git push heroku master`. Para que heroku abra la aplicación no tenemos más que introducir la orden `heroku open`.
 
 Contenido
 ---------
