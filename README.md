@@ -1,12 +1,17 @@
-Práctica 5 - STW
+Práctica 6 - STW
 ==============
+
+Atención
+--------
+
+Es necesario ejecutar la práctica en el navegador **Mozilla Firefox**... Disculpen las molestias ;)
 
 Objetivo
 ---------
 
-En la práctica anterior ya introducimos hojas de estilo para darle más color y vistosidad a nuestra página de muestra.
+En ésta práctica realizaremos el despliegue en Heroku de nuestro proyecto Piedra-Papel-Tijeras. Para ello primero debemos crearnos una cuenta en Heroku y descargarnos el Heroku Toolbelt.
 
-En ésta intentaremos añadir pruebas unitarias y **TDD** (Desarrollo Dirigido por las pruebas). Además crearemos una sesión para que la aplicación disponga de contadores para el número de partidas jugadas y el número de partidas ganadas por el jugador. 
+Debemos disponer de un Gemfile y de un Rakefile; luego podremos introducir en consola las ordenes `heroku create` y `git push heroku master`.
 
 Contenido
 ---------
@@ -17,6 +22,7 @@ El contenido del fichero que se presenta es el siguiente:
 * Gemfile.lock
 * README
 * Rakefile
+* Procfile
 * config.ru
 * public
 	* css
@@ -38,11 +44,13 @@ Ejecución
 
 Podemos ejecutar la práctica de las siguientes formas:
 
-* Como en el directorio hemos específicado un Rakefile, podemos introducir en la consola el siguiente comando: `rake`. Luego con un navegador iremos a la página `localhost:8080` para visualizar el resultado.
+* Para ver el correspondiente despliegue en Heroku debemos visitar en el navegador **Mozilla Firefox** la siguiente dirección: `http://pure-refuge-8506.herokuapp.com/`
 
-* Si queremos ejecutar los test unitarios debemos introducir la orden: `rake test`
+* Como en el directorio hemos específicado un Rakefile, podemos introducir en la consola el siguiente comando: `rake`. Luego con un navegador iremos a la página `localhost:9292` para visualizar el resultado.
 
-* Si queremos ejecutar los test con RSpec debemos introducir el comando: `rake spec`
+* Si queremos ejecutar los test unitarios debemos introducir la orden: `rake test`.
+
+* Si queremos ejecutar los test con RSpec debemos introducir el comando: `rake spec`.
 
 
 #####Asignatura: Sistemas y Tecnologías Web.
